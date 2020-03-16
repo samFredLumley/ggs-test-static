@@ -1,0 +1,1 @@
+# ggs-test-static
