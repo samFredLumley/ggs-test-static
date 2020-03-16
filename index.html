@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	
+		<title>bulma – Just another WordPress site</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+
+
+<link rel="stylesheet" id="wp-block-library-css" href="https://samfredlumley.github.io/ggs-test-static/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="neve-style-css" href="https://samfredlumley.github.io/ggs-test-static/wp-content/themes/neve/style.min.css" type="text/css" media="all">
+<style id="neve-style-inline-css" type="text/css">
+body, .site-title{font-size:15px;line-height:1.6;letter-spacing:0px;}body, .site-title{font-family:"Poppins";font-weight:400;text-transform:none;}h1:not(.site-title), .single h1.entry-title{font-size:50px;}h1:not(.site-title), .single h1.entry-title{font-weight:800;}h1:not(.site-title), .single h1.entry-title{text-transform:none;}h1:not(.site-title), .single h1.entry-title{letter-spacing:0px;}h1:not(.site-title), .single h1.entry-title{line-height:1.6;}h2{font-size:30px;}h2{font-weight:800;}h2{text-transform:none;}h2{letter-spacing:0px;}h2{line-height:1.6;}h3{font-size:25px;}h3{font-weight:800;}h3{text-transform:none;}h3{letter-spacing:0px;}h3{line-height:1.6;}h4{font-size:1px;}h4{font-weight:800;}h4{text-transform:none;}h4{letter-spacing:0px;}h4{line-height:1.6;}h1, .single h1.entry-title, h2, h3, h4, h5, h6{font-family:"Poppins";}a{color:#0a0000;}.nv-loader{border-color:#0a0000;}a:hover, a:focus{color:#4f4f4f;}body, .entry-title a, .entry-title a:hover, .entry-title a:focus{color:#000000;}.has-white-background-color{background-color:#ffffff!important;}.has-white-color{color:#ffffff!important;}.has-black-background-color{background-color:#000000!important;}.has-black-color{color:#000000!important;}.has-neve-button-color-background-color{background-color:#0366d6!important;}.has-neve-button-color-color{color:#0366d6!important;}.has-neve-link-color-background-color{background-color:#0a0000!important;}.has-neve-link-color-color{color:#0a0000!important;}.has-neve-link-hover-color-background-color{background-color:#4f4f4f!important;}.has-neve-link-hover-color-color{color:#4f4f4f!important;}.has-neve-text-color-background-color{background-color:#000000!important;}.has-neve-text-color-color{color:#000000!important;}.nv-tags-list a{color:#0366d6;}.nv-tags-list a{border-color:#0366d6;} .button.button-primary, button, input[type=button], .btn, input[type="submit"], /* Buttons in navigation */ ul[id^="nv-primary-navigation"] li.button.button-primary > a, .menu li.button.button-primary > a{background-color:#0366d6;} .button.button-primary, button, input[type=button], .btn, input[type="submit"], /* Buttons in navigation */ ul[id^="nv-primary-navigation"] li.button.button-primary > a, .menu li.button.button-primary > a{color:#ffffff;}.nv-tags-list a:hover{border-color:#0366d6;} .button.button-primary:hover, .nv-tags-list a:hover, ul[id^="nv-primary-navigation"] li.button.button-primary > a:hover, .menu li.button.button-primary > a:hover{background-color:#0366d6;} .button.button-primary:hover, .nv-tags-list a:hover, ul[id^="nv-primary-navigation"] li.button.button-primary > a:hover, .menu li.button.button-primary > a:hover{color:#ffffff;}.button.button-primary, button, input[type=button], .btn, input[type="submit"]:not(.search-submit), /* Buttons in navigation */ ul[id^="nv-primary-navigation"] li.button.button-primary > a, .menu li.button.button-primary > a{border-radius:3px;} .button.button-secondary, #comments input[type="submit"], .cart-off-canvas .button.nv-close-cart-sidebar{color:#676767;}.button.button-secondary, #comments input[type="submit"], .cart-off-canvas .button.nv-close-cart-sidebar{border-color:#676767;} .button.button-secondary:hover, #comments input[type="submit"]:hover{color:#676767;}.button.button-secondary:hover, #comments input[type="submit"]:hover{border-color:#676767;}.button.button-secondary, #comments input[type="submit"]{border-radius:3px;}.button.button-secondary, #comments input[type="submit"]{border:1px solid;border-width:1px;}@media(min-width: 576px){body, .site-title{font-size:16px;line-height:1.6;letter-spacing:0px;}h1:not(.site-title), .single h1.entry-title{font-size:80px;}h1:not(.site-title), .single h1.entry-title{letter-spacing:0px;}h1:not(.site-title), .single h1.entry-title{line-height:1.6;}h2{font-size:50px;}h2{letter-spacing:0px;}h2{line-height:1.2;}h3{font-size:25px;}h3{letter-spacing:0px;}h3{line-height:1.6;}h4{font-size:1em;}h4{letter-spacing:0px;}h4{line-height:1.6;}}@media(min-width: 960px){body, .site-title{font-size:17px;line-height:1.7;letter-spacing:0px;}h1:not(.site-title), .single h1.entry-title{font-size:100px;}h1:not(.site-title), .single h1.entry-title{letter-spacing:0px;}h1:not(.site-title), .single h1.entry-title{line-height:1.2;}h2{font-size:60px;}h2{letter-spacing:0px;}h2{line-height:1.2;}h3{font-size:30px;}h3{letter-spacing:0px;}h3{line-height:1.6;}h4{font-size:1.25px;}h4{letter-spacing:0px;}h4{line-height:1.6;}.neve-main > .archive-container .nv-index-posts.col{max-width:100%;}.neve-main > .archive-container .nv-sidebar-wrap{max-width:0%;}.caret-wrap{border-color:transparent;}}.hfg_header .header-top-inner,.hfg_header .header-top-inner.dark-mode,.hfg_header .header-top-inner.light-mode { } .hfg_header .header-main-inner,.hfg_header .header-main-inner.dark-mode,.hfg_header .header-main-inner.light-mode { } .hfg_header .header-bottom-inner,.hfg_header .header-bottom-inner.dark-mode,.hfg_header .header-bottom-inner.light-mode { } .hfg_header .header-menu-sidebar .header-menu-sidebar-bg,.hfg_header .header-menu-sidebar .header-menu-sidebar-bg.dark-mode,.hfg_header .header-menu-sidebar .header-menu-sidebar-bg.light-mode { } @media (max-width: 576px) { .builder-item--logo .site-logo img { max-width: 120px; } .builder-item--logo .site-logo { padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; } .builder-item--logo { margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--nav-icon .navbar-toggle { padding-top: 10px; padding-right: 15px; padding-bottom: 10px; padding-left: 15px; } .builder-item--nav-icon { margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--primary-menu li > a { font-size: 1em; line-height: 1.6; letter-spacing: 0px; } .builder-item--primary-menu li > a svg { height: 1em; width: 1em; } .builder-item--primary-menu { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--button_base > .component-wrap > .button { padding-top: 8px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px; } .builder-item--button_base { margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--custom_html .nv-html-content { font-size: 1em; line-height: 1.6; letter-spacing: 0px; } .builder-item--custom_html .nv-html-content svg { height: 1em; width: 1em; } .builder-item--custom_html { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--header_search { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--header_search_responsive { padding-top: 0px; padding-right: 10px; padding-bottom: 0px; padding-left: 10px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--secondary-menu #secondary-menu li > a { font-size: 1em; line-height: 1.6; letter-spacing: 0px; } .builder-item--secondary-menu #secondary-menu li > a svg { height: 1em; width: 1em; } .builder-item--secondary-menu { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--footer-one-widgets { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--footer-two-widgets { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--footer-three-widgets { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--footer-four-widgets { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--footer-menu li > a { font-size: 1em; line-height: 1.6; letter-spacing: 0px; } .builder-item--footer-menu li > a svg { height: 1em; width: 1em; } .builder-item--footer-menu { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--footer_copyright { font-size: 1em; line-height: 1.6; letter-spacing: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--footer_copyright svg { height: 1em; width: 1em; } } @media (min-width: 576px) { .builder-item--logo .site-logo img { max-width: 120px; } .builder-item--logo .site-logo { padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; } .builder-item--logo { margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--nav-icon .navbar-toggle { padding-top: 10px; padding-right: 15px; padding-bottom: 10px; padding-left: 15px; } .builder-item--nav-icon { margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--primary-menu li > a { font-size: 1em; line-height: 1.6; letter-spacing: 0px; } .builder-item--primary-menu li > a svg { height: 1em; width: 1em; } .builder-item--primary-menu { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--button_base > .component-wrap > .button { padding-top: 8px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px; } .builder-item--button_base { margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--custom_html .nv-html-content { font-size: 1em; line-height: 1.6; letter-spacing: 0px; } .builder-item--custom_html .nv-html-content svg { height: 1em; width: 1em; } .builder-item--custom_html { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--header_search { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--header_search_responsive { padding-top: 0px; padding-right: 10px; padding-bottom: 0px; padding-left: 10px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--secondary-menu #secondary-menu li > a { font-size: 1em; line-height: 1.6; letter-spacing: 0px; } .builder-item--secondary-menu #secondary-menu li > a svg { height: 1em; width: 1em; } .builder-item--secondary-menu { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--footer-one-widgets { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--footer-two-widgets { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--footer-three-widgets { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--footer-four-widgets { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--footer-menu li > a { font-size: 1em; line-height: 1.6; letter-spacing: 0px; } .builder-item--footer-menu li > a svg { height: 1em; width: 1em; } .builder-item--footer-menu { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--footer_copyright { font-size: 1em; line-height: 1.6; letter-spacing: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--footer_copyright svg { height: 1em; width: 1em; } } @media (min-width: 961px) { .builder-item--logo .site-logo img { max-width: 120px; } .builder-item--logo .site-logo { padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; } .builder-item--logo { margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--nav-icon .navbar-toggle { padding-top: 10px; padding-right: 15px; padding-bottom: 10px; padding-left: 15px; } .builder-item--nav-icon { margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--primary-menu li > a { font-size: 1em; line-height: 1.6; letter-spacing: 0px; } .builder-item--primary-menu li > a svg { height: 1em; width: 1em; } .builder-item--primary-menu { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--button_base > .component-wrap > .button { padding-top: 8px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px; } .builder-item--button_base { margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--custom_html .nv-html-content { font-size: 1em; line-height: 1.6; letter-spacing: 0px; } .builder-item--custom_html .nv-html-content svg { height: 1em; width: 1em; } .builder-item--custom_html { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--header_search { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--header_search_responsive { padding-top: 0px; padding-right: 10px; padding-bottom: 0px; padding-left: 10px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--secondary-menu #secondary-menu li > a { font-size: 1em; line-height: 1.6; letter-spacing: 0px; } .builder-item--secondary-menu #secondary-menu li > a svg { height: 1em; width: 1em; } .builder-item--secondary-menu { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--footer-one-widgets { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--footer-two-widgets { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--footer-three-widgets { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--footer-four-widgets { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--footer-menu li > a { font-size: 1em; line-height: 1.6; letter-spacing: 0px; } .builder-item--footer-menu li > a svg { height: 1em; width: 1em; } .builder-item--footer-menu { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--footer_copyright { font-size: 1em; line-height: 1.6; letter-spacing: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } .builder-item--footer_copyright svg { height: 1em; width: 1em; } } .builder-item--nav-icon .navbar-toggle { border-radius: 3px; border: 1px solid; } .header-menu-sidebar .close-sidebar-panel .navbar-toggle { border-radius: 3px; border: 1px solid; } .builder-item--primary-menu .nav-menu-primary > .primary-menu-ul li:not(.woocommerce-mini-cart-item) > a { color: #000000; } .builder-item--primary-menu .nav-menu-primary > .primary-menu-ul li > .amp-caret-wrap svg { fill: #000000; } .builder-item--primary-menu .nav-menu-primary > .primary-menu-ul li:not(.woocommerce-mini-cart-item) > a:after { background-color: #474747; } .builder-item--primary-menu .nav-menu-primary > .primary-menu-ul li:not(.woocommerce-mini-cart-item):hover > a { color: #474747; } .builder-item--primary-menu .nav-menu-primary > .primary-menu-ul li:hover > .amp-caret-wrap svg { fill: #474747; } .builder-item--primary-menu .nav-menu-primary > .primary-menu-ul li.current-menu-item > a { color: #474747; } .builder-item--primary-menu .nav-menu-primary > .primary-menu-ul li.current-menu-item > .amp-caret-wrap svg { fill: #474747; } @media (min-width: 961px) { .header--row .hfg-item-right .builder-item--primary-menu .primary-menu-ul > li:not(:first-child) { margin-left: 20px; } .header--row .hfg-item-center .builder-item--primary-menu .primary-menu-ul > li:not(:last-child), .header--row .hfg-item-left .builder-item--primary-menu .primary-menu-ul > li:not(:last-child) { margin-right: 20px; } .builder-item--primary-menu .style-full-height .primary-menu-ul > li:not(.menu-item-nav-search):not(.menu-item-nav-cart) > a:after { left: -10px; right: -10px; } .builder-item--primary-menu .style-full-height .primary-menu-ul:not(#nv-primary-navigation-sidebar) > li:not(.menu-item-nav-search):not(.menu-item-nav-cart):hover > a:after { width: calc(100% + 20px) !important;; } } .builder-item--primary-menu .primary-menu-ul > li > a { height: 25px; } .builder-item--primary-menu li > a { font-weight: 500; text-transform: none; } .builder-item--button_base > .component-wrap > .button { border-radius: 3px; } .builder-item--custom_html .nv-html-content { font-weight: 500; text-transform: none; } .builder-item--header_search_responsive .nv-search > svg { width: 15px; height: 15px; } .hfg-item-right .builder-item--secondary-menu #secondary-menu > li:not(:first-child) { margin-left: 20px; } .hfg-item-center .builder-item--secondary-menu #secondary-menu li:not(:last-child), .hfg-item-left .builder-item--secondary-menu #secondary-menu > li:not(:last-child) { margin-right: 20px; } .builder-item--secondary-menu .style-full-height #secondary-menu > li > a:after { left: -10px; right: -10px; } .builder-item--secondary-menu .style-full-height #secondary-menu > li:hover > a:after { width: calc(100% + 20px) !important;; } .builder-item--secondary-menu #secondary-menu > li > a { height: 25px; } .builder-item--secondary-menu #secondary-menu li > a { font-weight: 500; text-transform: none; } .footer-top-inner,.footer-top-inner.dark-mode,.footer-top-inner.light-mode { } .footer-bottom-inner,.footer-bottom-inner.dark-mode,.footer-bottom-inner.light-mode { background-color: #000000; } .hfg-item-right .builder-item--footer-menu .footer-menu > li:not(:first-child) { margin-left: 20px; } .hfg-item-center .builder-item--footer-menu .footer-menu li:not(:last-child), .hfg-item-left .builder-item--footer-menu .footer-menu > li:not(:last-child) { margin-right: 20px; } .builder-item--footer-menu .style-full-height .footer-menu > li > a:after { left: -10px !important; right: -10px !important; } .builder-item--footer-menu .style-full-height .footer-menu > li:hover > a:after { width: calc(100% + 20px) !important;; } .builder-item--footer-menu .footer-menu > li > a { height: 25px; } .builder-item--footer-menu li > a { font-weight: 500; text-transform: none; } .builder-item--footer_copyright { font-weight: 500; text-transform: none; } 
+@media(min-width: 960px) {
+			#content.neve-main > .container > .row > .col, 
+			#content.neve-main > .container-fluid > .row > .col { max-width: 100%; } 
+			#content.neve-main > .container > .row > .nv-sidebar-wrap, 
+			#content.neve-main > .container > .row > .nv-sidebar-wrap.shop-sidebar,
+			#content.neve-main > .container-fluid > .row > .nv-sidebar-wrap, 
+			#content.neve-main > .container-fluid > .row > .nv-sidebar-wrap.shop-sidebar { max-width: 0%; }
+		}
+</style>
+<link rel="stylesheet" id="elementor-icons-css" href="https://samfredlumley.github.io/ggs-test-static/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-animations-css" href="https://samfredlumley.github.io/ggs-test-static/wp-content/plugins/elementor/assets/lib/animations/animations.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="https://samfredlumley.github.io/ggs-test-static/wp-content/plugins/elementor/assets/css/frontend.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-post-54-css" href="https://samfredlumley.github.io/ggs-test-static/wp-content/uploads/elementor/css/post-54.css" type="text/css" media="all">
+<link rel="stylesheet" id="neve-google-font-poppins-css" href="//fonts.googleapis.com/css?family=Poppins%3A400%2C800&ver=5.3.2" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-icons-shared-0-css" href="https://samfredlumley.github.io/ggs-test-static/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-brands-css" href="https://samfredlumley.github.io/ggs-test-static/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css" type="text/css" media="all">
+
+
+
+
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/core/main.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/daygrid/main.min.css" rel="stylesheet"> 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/list/main.min.css" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/core/locales-all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/core/main.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/daygrid/main.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/google-calendar/main.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/list/main.min.js"></script><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head>
+
+<body class="home page-template page-template-elementor_header_footer page page-id-54 nv-sidebar-full-width menu_sidebar_slide_left elementor-default elementor-template-full-width elementor-kit-70 elementor-page elementor-page-54">
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          plugins: [ 'dayGrid', 'list', 'googleCalendar' ],
+          googleCalendarApiKey: 'AIzaSyDInOnn26cawzWcMuqwJHQwYOvZULwCKaE',
+  events: {
+    googleCalendarId: 'boda5gb9nc26jc5d1m1v4doi3k@group.calendar.google.com'
+  }
+        });
+
+        calendar.render();
+      });
+
+    </script><div class="wrapper">
+	<header class="header" role="banner">
+		<a class="neve-skip-link show-on-focus" href="#content" tabindex="0">
+			Skip to content		</a>
+		<div id="header-grid" class="hfg_header site-header">
+	
+<nav class="header--row header-main hide-on-mobile hide-on-tablet layout-full-contained nv-navbar header--row" data-row-id="main" data-show-on="desktop">
+
+	<div class="header--row-inner header-main-inner light-mode">
+		<div class="container">
+			<div class="row row--wrapper" data-section="hfg_header_layout_main">
+				<div class="builder-item hfg-item-first col-4 col-md-4 col-sm-4 hfg-item-left"><div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
+	<div class="site-logo">
+	<a class="brand" href="https://samfredlumley.github.io/ggs-test-static/" title="bulma" aria-label="bulma"><div class="nv-title-tagline-wrap"><p class="site-title">bulma</p></div></a></div>
+
+	</div>
+
+</div><div class="builder-item hfg-item-last col-8 col-md-8 col-sm-8 hfg-item-right"><div class="item--inner builder-item--primary-menu has_menu" data-section="header_menu_primary" data-item-id="primary-menu">
+	<div class="nv-nav-wrap">
+	<div role="navigation" class="style-border-bottom nav-menu-primary" aria-label="Primary Menu">
+
+		<ul id="nv-primary-navigation-main" class="primary-menu-ul"><li id="menu-item-62" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-54 current_page_item menu-item-62"><a href="https://samfredlumley.github.io/ggs-test-static/" aria-current="page">Home</a></li>
+<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://samfredlumley.github.io/ggs-test-static/705ea-about/">About</a></li>
+<li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-63"><a href="https://samfredlumley.github.io/ggs-test-static/705ea-news/">News</a></li>
+<li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><a href="https://samfredlumley.github.io/ggs-test-static/705ea-contact/">Contact</a></li>
+</ul>	</div>
+</div>
+
+	</div>
+
+</div>							</div>
+		</div>
+	</div>
+</nav>
+
+
+<nav class="header--row header-main hide-on-desktop layout-full-contained nv-navbar header--row" data-row-id="main" data-show-on="mobile">
+
+	<div class="header--row-inner header-main-inner light-mode">
+		<div class="container">
+			<div class="row row--wrapper" data-section="hfg_header_layout_main">
+				<div class="builder-item hfg-item-first col-8 col-md-8 col-sm-8 hfg-item-left"><div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
+	<div class="site-logo">
+	<a class="brand" href="https://samfredlumley.github.io/ggs-test-static/" title="bulma" aria-label="bulma"><div class="nv-title-tagline-wrap"><p class="site-title">bulma</p></div></a></div>
+
+	</div>
+
+</div><div class="builder-item hfg-item-last col-4 col-md-4 col-sm-4 hfg-item-right"><div class="item--inner builder-item--nav-icon" data-section="header_menu_icon" data-item-id="nav-icon">
+	<div class="menu-mobile-toggle item-button navbar-toggle-wrapper">
+	<button class="navbar-toggle" aria-label="
+			Navigation Menu			">
+				<div class="bars">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</div>
+		<span class="screen-reader-text">Toggle Navigation</span>
+	</button>
+</div> 
+
+
+	</div>
+
+</div>							</div>
+		</div>
+	</div>
+</nav>
+
+<div id="header-menu-sidebar" class="header-menu-sidebar menu-sidebar-panel light-mode slide_left">
+	<div id="header-menu-sidebar-bg" class="header-menu-sidebar-bg">
+		<div class="close-sidebar-panel navbar-toggle-wrapper">
+			<button class="navbar-toggle active" aria-label="
+				Navigation Menu				">
+				<div class="bars">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</div>
+				<span class="screen-reader-text">
+				Toggle Navigation					</span>
+			</button>
+		</div>
+		<div id="header-menu-sidebar-inner" class="header-menu-sidebar-inner">
+			<div class="builder-item hfg-item-last hfg-item-first col-12 col-md-12 col-sm-12 hfg-item-right"><div class="item--inner builder-item--primary-menu has_menu" data-section="header_menu_primary" data-item-id="primary-menu">
+	<div class="nv-nav-wrap">
+	<div role="navigation" class="style-border-bottom nav-menu-primary" aria-label="Primary Menu">
+
+		<ul id="nv-primary-navigation-sidebar" class="primary-menu-ul"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-54 current_page_item menu-item-62"><a href="https://samfredlumley.github.io/ggs-test-static/" aria-current="page">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://samfredlumley.github.io/ggs-test-static/705ea-about/">About</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-63"><a href="https://samfredlumley.github.io/ggs-test-static/705ea-news/">News</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><a href="https://samfredlumley.github.io/ggs-test-static/705ea-contact/">Contact</a></li>
+</ul>	</div>
+</div>
+
+	</div>
+
+</div>		</div>
+	</div>
+</div>
+<div class="header-menu-sidebar-overlay"></div>
+
+</div>
+	</header>
+	
+	<main id="content" class="neve-main" role="main">
+
+		<div data-elementor-type="wp-post" data-elementor-id="54" class="elementor elementor-54" data-elementor-settings="[]">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+							<section class="elementor-element elementor-element-04e2ee6 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="04e2ee6" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-a7f54e2 elementor-column elementor-col-100 elementor-top-column" data-id="a7f54e2" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-9a823f1 elementor-widget elementor-widget-html" data-id="9a823f1" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			    <div id="calendar"></div>		</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-1e0a275 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="1e0a275" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-e7b5b52 elementor-column elementor-col-100 elementor-top-column" data-id="e7b5b52" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-6dd17d1 elementor-widget elementor-widget-html" data-id="6dd17d1" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			 <iframe src="https://samfredlumley.github.io/full-calendar/"></iframe> 
+		</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-62a579a elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="62a579a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-795415e elementor-column elementor-col-100 elementor-top-column" data-id="795415e" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-ec8aec4 elementor-widget elementor-widget-shortcode" data-id="ec8aec4" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-shortcode">[pgc public="true" calendarids=”boda5gb9nc26jc5d1m1v4doi3k@group.calendar.google.com"]</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-163e57e elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="163e57e" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-0118b6a elementor-column elementor-col-50 elementor-top-column" data-id="0118b6a" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-c1a3dcc elementor-widget elementor-widget-image-gallery" data-id="c1a3dcc" data-element_type="widget" data-widget_type="image-gallery.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-gallery">
+			<div id="gallery-1" class="gallery galleryid-54 gallery-columns-3 gallery-size-thumbnail"><dl class="gallery-item">
+			<dt class="gallery-icon landscape">
+				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="c1a3dcc" data-elementor-lightbox-title="The New UMoMA Opens its Doors" href="https://samfredlumley.github.io/ggs-test-static/wp-content/uploads/2020/03/2020-landscape-1-2.png"><img width="150" height="150" src="https://samfredlumley.github.io/ggs-test-static/wp-content/uploads/2020/03/2020-landscape-1-2-150x150.png" class="attachment-thumbnail size-thumbnail" alt=""></a>
+			</dt></dl><dl class="gallery-item">
+			<dt class="gallery-icon landscape">
+				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="c1a3dcc" data-elementor-lightbox-title="neve-minimal-blogger-12" href="https://samfredlumley.github.io/ggs-test-static/wp-content/uploads/2019/11/neve-minimal-blogger-12.png"><img width="150" height="150" src="https://samfredlumley.github.io/ggs-test-static/wp-content/uploads/2019/11/neve-minimal-blogger-12.png" class="attachment-thumbnail size-thumbnail" alt=""></a>
+			</dt></dl><dl class="gallery-item">
+			<dt class="gallery-icon landscape">
+				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="c1a3dcc" data-elementor-lightbox-title="neve-minimal-blogger-11" href="https://samfredlumley.github.io/ggs-test-static/wp-content/uploads/2019/11/neve-minimal-blogger-11.jpg"><img width="150" height="100" src="https://samfredlumley.github.io/ggs-test-static/wp-content/uploads/2019/11/neve-minimal-blogger-11.jpg" class="attachment-thumbnail size-thumbnail" alt=""></a>
+			</dt></dl><br style="clear: both">
+		</div>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-05e73c7 elementor-column elementor-col-50 elementor-top-column" data-id="05e73c7" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-20dccaa elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="20dccaa" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-417d7d6 elementor-column elementor-col-50 elementor-top-column" data-id="417d7d6" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-28bbf95 elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="28bbf95" data-element_type="widget" data-settings='{"slides_to_show":"1","autoplay":"no","infinite":"no","navigation":"both","effect":"slide","speed":500,"direction":"ltr"}' data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-carousel-wrapper swiper-container" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper">
+				<div class="swiper-slide"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="https://samfredlumley.github.io/ggs-test-static/wp-content/uploads/2020/03/2020-landscape-1-2.png" alt="The New UMoMA Opens its Doors"></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="https://samfredlumley.github.io/ggs-test-static/wp-content/uploads/2019/11/neve-minimal-blogger-12.png" alt="neve-minimal-blogger-12"></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="https://samfredlumley.github.io/ggs-test-static/wp-content/uploads/2019/11/neve-minimal-blogger-11.jpg" alt="neve-minimal-blogger-11"></figure></div>			</div>
+												<div class="swiper-pagination"></div>
+													<div class="elementor-swiper-button elementor-swiper-button-prev">
+						<i class="eicon-chevron-left" aria-hidden="true"></i>
+						<span class="elementor-screen-only">Previous</span>
+					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next">
+						<i class="eicon-chevron-right" aria-hidden="true"></i>
+						<span class="elementor-screen-only">Next</span>
+					</div>
+									</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-b67fd44 elementor-column elementor-col-50 elementor-top-column" data-id="b67fd44" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-b1fb40b elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="b1fb40b" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+			<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img src="https://samfredlumley.github.io/ggs-test-static/wp-content/plugins/elementor/assets/images/placeholder.png" title="" alt=""></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">This is the heading</h3><p class="elementor-image-box-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p></div></div>		</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-0af8b5c elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="0af8b5c" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-7f58307 elementor-column elementor-col-25 elementor-top-column" data-id="7f58307" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-0a84b0d elementor-widget elementor-widget-image" data-id="0a84b0d" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="584" height="584" src="https://samfredlumley.github.io/ggs-test-static/wp-content/uploads/2019/11/neve-minimal-blogger-12.png" class="attachment-large size-large" alt="">											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-c8c1775 elementor-column elementor-col-25 elementor-top-column" data-id="c8c1775" data-element_type="column">
+			<div class="elementor-column-wrap">
+					<div class="elementor-widget-wrap">
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-75595a6 elementor-column elementor-col-25 elementor-top-column" data-id="75595a6" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-fb05368 elementor-widget elementor-widget-text-editor" data-id="fb05368" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h3>Geograph</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p><p>jh bmn</p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-a792fa9 elementor-column elementor-col-25 elementor-top-column" data-id="a792fa9" data-element_type="column">
+			<div class="elementor-column-wrap">
+					<div class="elementor-widget-wrap">
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-e325bbc elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="e325bbc" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-c6fd394 elementor-column elementor-col-25 elementor-top-column" data-id="c6fd394" data-element_type="column">
+			<div class="elementor-column-wrap">
+					<div class="elementor-widget-wrap">
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-2df87f1 elementor-column elementor-col-50 elementor-top-column" data-id="2df87f1" data-element_type="column">
+			<div class="elementor-column-wrap">
+					<div class="elementor-widget-wrap">
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-2f79cd8 elementor-column elementor-col-25 elementor-top-column" data-id="2f79cd8" data-element_type="column">
+			<div class="elementor-column-wrap">
+					<div class="elementor-widget-wrap">
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-2d57c3d elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="2d57c3d" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-b41ae75 elementor-column elementor-col-50 elementor-top-column" data-id="b41ae75" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-f342500 elementor-widget elementor-widget-image" data-id="f342500" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img src="https://samfredlumley.github.io/ggs-test-static/wp-content/plugins/elementor/assets/images/placeholder.png" title="" alt="">											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-c1807ea elementor-column elementor-col-50 elementor-top-column" data-id="c1807ea" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-d2d1fdc elementor-widget elementor-widget-heading" data-id="d2d1fdc" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Add Your Heading Text Here</h2>		</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-0721654 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="0721654" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-e44d171 elementor-column elementor-col-25 elementor-top-column" data-id="e44d171" data-element_type="column">
+			<div class="elementor-column-wrap">
+					<div class="elementor-widget-wrap">
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-90ff32b elementor-column elementor-col-25 elementor-top-column" data-id="90ff32b" data-element_type="column">
+			<div class="elementor-column-wrap">
+					<div class="elementor-widget-wrap">
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-44acecd elementor-column elementor-col-50 elementor-top-column" data-id="44acecd" data-element_type="column">
+			<div class="elementor-column-wrap">
+					<div class="elementor-widget-wrap">
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-4167098 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle elementor-section elementor-top-section" data-id="4167098" data-element_type="section" data-settings='{"background_background":"classic"}'>
+						<div class="elementor-container elementor-column-gap-extended">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-b418b62 elementor-column elementor-col-50 elementor-top-column" data-id="b418b62" data-element_type="column">
+			<div class="elementor-column-wrap">
+					<div class="elementor-widget-wrap">
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-fbc9063 elementor-column elementor-col-50 elementor-top-column" data-id="fbc9063" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-35d047c elementor-widget elementor-widget-heading" data-id="35d047c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">minimized simplicity</p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-357f0df elementor-widget elementor-widget-heading" data-id="357f0df" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">The minimal blog</h1>		</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-bf6ef95 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="bf6ef95" data-element_type="section" data-settings='{"background_background":"classic"}'>
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-1819836 elementor-column elementor-col-33 elementor-top-column" data-id="1819836" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-9e2eff6 elementor-widget elementor-widget-divider" data-id="9e2eff6" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-74fc43a elementor-widget elementor-widget-heading" data-id="74fc43a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Blog Posts</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-06aeb8d elementor-widget elementor-widget-text-editor" data-id="06aeb8d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>I am a fashion photographer and blogger, feel free to read the whole story. Whereas a trend often connotes a very specific aesthetic expression.</p></div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-965f27c elementor-align-left elementor-widget elementor-widget-button" data-id="965f27c" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://samfredlumley.github.io/ggs-test-static/neve-blogger-news/" class="elementor-button-link elementor-button elementor-size-lg" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Go to blog</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-81ac082 elementor-column elementor-col-33 elementor-top-column" data-id="81ac082" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-764dfea elementor-widget elementor-widget-divider" data-id="764dfea" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-9f54131 elementor-widget elementor-widget-heading" data-id="9f54131" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Services</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3e0b644 elementor-widget elementor-widget-text-editor" data-id="3e0b644" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>I am a fashion photographer and blogger, feel free to read the whole story. Whereas a trend often connotes a very specific aesthetic expression.</p></div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-50d3ad6 elementor-align-left elementor-widget elementor-widget-button" data-id="50d3ad6" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="#" class="elementor-button-link elementor-button elementor-size-lg" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Learn More</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-5c0f9c6 elementor-column elementor-col-33 elementor-top-column" data-id="5c0f9c6" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-a1d9099 elementor-widget elementor-widget-divider" data-id="a1d9099" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-a1222c8 elementor-widget elementor-widget-heading" data-id="a1222c8" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">About me</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-75d2391 elementor-widget elementor-widget-text-editor" data-id="75d2391" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>I am a fashion photographer and blogger, feel free to read the whole story. Whereas a trend often connotes a very specific aesthetic expression.</p></div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-f70b837 elementor-align-left elementor-widget elementor-widget-button" data-id="f70b837" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://samfredlumley.github.io/ggs-test-static/neve-blogger-about/" class="elementor-button-link elementor-button elementor-size-lg" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Learn More</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-3b1daeb elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="3b1daeb" data-element_type="section" data-settings='{"background_background":"classic"}'>
+						<div class="elementor-container elementor-column-gap-extended">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-73c878e elementor-column elementor-col-50 elementor-top-column" data-id="73c878e" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-56db672 elementor-widget elementor-widget-divider" data-id="56db672" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-d806e3f elementor-widget elementor-widget-heading" data-id="d806e3f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">about me</p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-315f5b7 elementor-widget elementor-widget-heading" data-id="315f5b7" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Welcome friend.</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-d5a3187 text-bigger elementor-widget elementor-widget-heading" data-id="d5a3187" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<span class="elementor-heading-title elementor-size-default">I am Joshua, a blogger based in San Francisco, blogging about minimalism and simplicity. </span>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2465cd8 elementor-align-left elementor-widget elementor-widget-button" data-id="2465cd8" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://samfredlumley.github.io/ggs-test-static/neve-blogger-about/" class="elementor-button-link elementor-button elementor-size-lg" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">More about me</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-f3cd668 elementor-column elementor-col-50 elementor-top-column" data-id="f3cd668" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-9815ea1 elementor-widget elementor-widget-image" data-id="9815ea1" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img src="https://samfredlumley.github.io/ggs-test-static/wp-content/uploads/elementor/thumbs/2020-landscape-1-1-omke15wj9j6fx6u6l0j8wlyuqsphpztv629gm1sn74.png" title="The New UMoMA Opens its Doors" alt="The New UMoMA Opens its Doors">											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-69f4e79 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="69f4e79" data-element_type="section" data-settings='{"background_background":"classic"}'>
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-80c9900 elementor-column elementor-col-100 elementor-top-column" data-id="80c9900" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<section class="elementor-element elementor-element-3ebb75a elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="3ebb75a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-90ce365 elementor-column elementor-col-100 elementor-inner-column" data-id="90ce365" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-3e19e08 elementor-widget elementor-widget-divider" data-id="3e19e08" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-06fd535 elementor-widget elementor-widget-heading" data-id="06fd535" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">What I blog about</p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-9b5d4a1 elementor-widget elementor-widget-heading" data-id="9b5d4a1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Blog Topics</h2>		</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-9d2c720 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="9d2c720" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-ff70f5f elementor-column elementor-col-33 elementor-inner-column" data-id="ff70f5f" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-babd3bb elementor-widget elementor-widget-image" data-id="babd3bb" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img src="https://samfredlumley.github.io/ggs-test-static/wp-content/uploads/2019/11/neve-minimal-blogger-01.jpg" title="" alt="">											</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-1a8baab elementor-widget elementor-widget-heading" data-id="1a8baab" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">People</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-60033b8 elementor-align-left elementor-widget elementor-widget-button" data-id="60033b8" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://samfredlumley.github.io/ggs-test-static/2019/11/19/blog-tips-for-beginners/" class="elementor-button-link elementor-button elementor-size-lg" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">View Posts</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-f61faf1 elementor-column elementor-col-33 elementor-inner-column" data-id="f61faf1" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-13ddb90 elementor-widget elementor-widget-image" data-id="13ddb90" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img src="https://samfredlumley.github.io/ggs-test-static/wp-content/uploads/2019/11/neve-minimal-blogger-06.jpg" title="" alt="">											</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-0ead0bd elementor-widget elementor-widget-heading" data-id="0ead0bd" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Urban</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-d8b286b elementor-align-left elementor-widget elementor-widget-button" data-id="d8b286b" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://samfredlumley.github.io/ggs-test-static/2019/11/19/blog-tips-for-beginners/" class="elementor-button-link elementor-button elementor-size-lg" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">View Posts</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-ecdf107 elementor-column elementor-col-33 elementor-inner-column" data-id="ecdf107" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-2d03143 elementor-widget elementor-widget-image" data-id="2d03143" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img src="https://samfredlumley.github.io/ggs-test-static/wp-content/uploads/2019/11/neve-minimal-blogger-11.jpg" title="" alt="">											</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-53c2092 elementor-widget elementor-widget-heading" data-id="53c2092" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Abstract</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-340c8e9 elementor-align-left elementor-widget elementor-widget-button" data-id="340c8e9" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://samfredlumley.github.io/ggs-test-static/2019/11/19/blog-tips-for-beginners/" class="elementor-button-link elementor-button elementor-size-lg" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">View Posts</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-a554f59 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="a554f59" data-element_type="section" data-settings='{"background_background":"classic"}'>
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-68c17c9 elementor-column elementor-col-100 elementor-top-column" data-id="68c17c9" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-9db13ea elementor-widget elementor-widget-heading" data-id="9db13ea" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">follow</p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-eb9bae3 elementor-widget elementor-widget-heading" data-id="eb9bae3" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Follow along the journey</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-fddbb51 text-bigger elementor-widget elementor-widget-heading" data-id="fddbb51" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<span class="elementor-heading-title elementor-size-default">Follow me on social and never miss a post from this blog. Only original content and minimalist views, shared daily on social.</span>		</div>
+				</div>
+				<div class="elementor-element elementor-element-ed84e3f elementor-shape-circle elementor-widget elementor-widget-social-icons" data-id="ed84e3f" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-social-icons-wrapper">
+							<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-7bb5696" target="_blank">
+					<span class="elementor-screen-only">Facebook</span>
+					<i class="fab fa-facebook"></i>				</a>
+							<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-ea007d2" target="_blank">
+					<span class="elementor-screen-only">Twitter</span>
+					<i class="fab fa-twitter"></i>				</a>
+							<a class="elementor-icon elementor-social-icon elementor-social-icon-google-plus elementor-repeater-item-8ec27e3" target="_blank">
+					<span class="elementor-screen-only">Google-plus</span>
+					<i class="fab fa-google-plus"></i>				</a>
+							<a class="elementor-icon elementor-social-icon elementor-social-icon-pinterest elementor-repeater-item-710f1f6" target="_blank">
+					<span class="elementor-screen-only">Pinterest</span>
+					<i class="fab fa-pinterest"></i>				</a>
+							<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-260c73b" target="_blank">
+					<span class="elementor-screen-only">Instagram</span>
+					<i class="fab fa-instagram"></i>				</a>
+					</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-0315cf6 elementor-section-full_width elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="0315cf6" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-d3c41d8 elementor-column elementor-col-25 elementor-top-column" data-id="d3c41d8" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-a6dc4ae elementor-widget elementor-widget-image" data-id="a6dc4ae" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img src="https://samfredlumley.github.io/ggs-test-static/wp-content/uploads/2019/11/neve-minimal-blogger-07.jpg" title="" alt="">											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-fe17911 elementor-column elementor-col-25 elementor-top-column" data-id="fe17911" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-d509211 elementor-widget elementor-widget-image" data-id="d509211" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img src="https://samfredlumley.github.io/ggs-test-static/wp-content/uploads/elementor/thumbs/2020-landscape-1-2-omkeko1wn2bwj2vdj9o4z8rh6n1to5sa9zehuuz240.png" title="The New UMoMA Opens its Doors" alt="The New UMoMA Opens its Doors">											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-4599194 elementor-column elementor-col-25 elementor-top-column" data-id="4599194" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-e92276f elementor-widget elementor-widget-image" data-id="e92276f" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img src="https://samfredlumley.github.io/ggs-test-static/wp-content/uploads/2019/11/neve-minimal-blogger-10.jpg" title="" alt="">											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-244ec61 elementor-column elementor-col-25 elementor-top-column" data-id="244ec61" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-311a598 elementor-widget elementor-widget-image" data-id="311a598" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img src="https://samfredlumley.github.io/ggs-test-static/wp-content/uploads/2019/11/neve-minimal-blogger-05.jpg" title="" alt="">											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-e7f2d06 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="e7f2d06" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-814aa45 elementor-column elementor-col-100 elementor-top-column" data-id="814aa45" data-element_type="column">
+			<div class="elementor-column-wrap">
+					<div class="elementor-widget-wrap">
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+		</main>
+
+
+<footer class="site-footer" id="site-footer">
+	<div class="hfg_footer">
+		<div class="footer--row footer-bottom layout-full-contained" id="cb-row--footer-bottom" data-row-id="bottom" data-show-on="desktop">
+	<div class="footer--row-inner footer-bottom-inner dark-mode footer-content-wrap">
+		<div class="container">
+			<div class="hfg-grid nv-footer-content hfg-grid-bottom row--wrapper row " data-section="hfg_footer_layout_bottom">
+				<div class="builder-item hfg-item-last hfg-item-first col-12 col-md-12 col-sm-12 hfg-item-center"><div class="item--inner builder-item--footer_copyright" data-section="footer_copyright" data-item-id="footer_copyright">
+	<div class="component-wrap">
+	<p><a href="https://themeisle.com/themes/neve/" rel="nofollow">Neve</a> | Powered by <a href="http://wordpress.org" rel="nofollow">WordPress</a></p></div>
+
+	</div>
+
+</div>							</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+</footer>
+
+</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+var NeveProperties = {"ajaxurl":"https:\/\/samfredlumley.github.io\/ggs-test-static\/wp-admin\/admin-ajax.php","nonce":"ada9f3dfff"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://samfredlumley.github.io/ggs-test-static/wp-content/themes/neve/assets/js/build/modern/frontend.js"></script>
+<script type="text/javascript" src="https://samfredlumley.github.io/ggs-test-static/wp-includes/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="https://samfredlumley.github.io/ggs-test-static/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="https://samfredlumley.github.io/ggs-test-static/wp-content/plugins/elementor/assets/js/frontend-modules.min.js"></script>
+<script type="text/javascript" src="https://samfredlumley.github.io/ggs-test-static/wp-includes/js/jquery/ui/position.min.js"></script>
+<script type="text/javascript" src="https://samfredlumley.github.io/ggs-test-static/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js"></script>
+<script type="text/javascript" src="https://samfredlumley.github.io/ggs-test-static/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js"></script>
+<script type="text/javascript" src="https://samfredlumley.github.io/ggs-test-static/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js"></script>
+<script type="text/javascript" src="https://samfredlumley.github.io/ggs-test-static/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js"></script>
+<script type="text/javascript">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","downloadImage":"Download image"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"2.9.6","urls":{"assets":"https:\/\/samfredlumley.github.io\/ggs-test-static\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"general":{"elementor_global_image_lightbox":"yes","elementor_lightbox_enable_counter":"yes","elementor_lightbox_enable_fullscreen":"yes","elementor_lightbox_enable_zoom":"yes","elementor_lightbox_enable_share":"yes","elementor_lightbox_title_src":"title","elementor_lightbox_description_src":"description"},"editorPreferences":[]},"post":{"id":54,"title":"bulma \u2013 Just another WordPress site","excerpt":"","featuredImage":false}};
+</script>
+<script type="text/javascript" src="https://samfredlumley.github.io/ggs-test-static/wp-content/plugins/elementor/assets/js/frontend.min.js"></script>
+
+</body>
+
+</html>
